@@ -1,5 +1,5 @@
 FROM registry.redhat.io/ubi8/openjdk-17:1.20-2.1721231681
-COPY target\demo-0.0.1-SNAPSHOT.jar ./app.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar ./app.jar
 COPY sample-file.txt ./sample-file.txt
 
 ENV CLASS_PATH=classpath:sample-file.txt
